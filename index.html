@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="container">
+     <div class="row d-flex justify-content-center m-5">
+        <div class="col-md-6">
+            <div class="card shadow">
+
+                <!-- header  -->
+                <div class="card-header bg-danger">
+                    <h1 class="text-center text-white">Currency Converter</h1>
+                </div>
+                <!-- body  -->
+                <div class="card-body">
+                <!-- alert  -->
+
+                    <div class="alertMsg">
+
+                    </div>
+                    <!-- form  -->
+                    <form id="currency-converter">
+                        <div class="my-3">
+                            <label class="h5" for="">Your Amount</label>
+                            <input class="form-control" name="amount" type="text">
+                        </div>
+                        <div class="my-3">
+                            <label class="h5" for="">Select Currency</label>
+                            <select class="form-control" name="currency">
+                                <option value="">--Select--</option>
+                                <option value="USD">USD</option>
+                                <option value="CAD">CAD</option>
+                                <option value="Pound">Pound</option>
+                                <option value="Euro">Euro</option>
+                                <option value="Rupee">Rupee</option>
+                            </select>
+                        </div>
+                        <div class="my-3 d-flex justify-content-center">
+                            <button class="form-control  btn btn-danger" type="submit">Convert Now</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- result footer  -->
+                <div class="card-footer">
+                    <div class="m-1 resultMsg d-flex justify-content-center">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="function.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
